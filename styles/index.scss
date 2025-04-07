@@ -2,4 +2,29 @@
 
 body {
 	background-color: grey;
+	background-color: #868686;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	position: relative;
+	display: grid;
+	width: 100%;
+	max-width: 900px;
+	height: 1200px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+	margin: 40px;
+	grid-template-columns: 1fr 2fr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
