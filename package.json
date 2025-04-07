@@ -1,0 +1,31 @@
+{
+	"name": "cv",
+	"version": "1.0.0",
+	"description": "CV Kvashnin Evgenie",
+	"source": "index.html",
+	"scripts": {
+		"sass": "sass --style=compressed --watch styles:dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/EOKvashnin/CV_Kvashnin_Evgenie.git"
+	},
+	"keywords": [
+		"CV",
+		"html",
+		"css",
+		"sass",
+		"npm",
+		"git"
+	],
+	"author": "Kvashnin Evgenie",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/EOKvashnin/CV_Kvashnin_Evgenie/issues"
+	},
+	"homepage": "https://github.com/EOKvashnin/CV_Kvashnin_Evgenie#readme",
+	"dependencies": {
+		"parcel": "^2.14.4",
+		"sass": "^1.86.3"
+	}
+}
