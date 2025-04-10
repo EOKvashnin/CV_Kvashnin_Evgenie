@@ -4,7 +4,7 @@
 	"description": "CV Kvashnin Evgenie",
 	"source": "index.html",
 	"scripts": {
-		"sass": "sass --style=compressed --watch styles:dist"
+		"sass": "sass --style=expanded --watch styles:dist"
 	},
 	"repository": {
 		"type": "git",
