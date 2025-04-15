@@ -1,8 +1,10 @@
 @use 'importer';
+@use 'sass:color';
 
 body {
-	background-color: grey;
-	background-color: #868686;
+	background: url('/img/texture.webp') center/cover no-repeat;
+	background-attachment: fixed;
+	// background-color: #868686;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,4 +29,9 @@ h5,
 h6,
 p {
 	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 500;
 }
