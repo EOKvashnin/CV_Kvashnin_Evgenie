@@ -19,6 +19,13 @@ body {
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 	margin: 40px;
 	grid-template-columns: 1fr 2fr;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr; /* Одна колонка */
+		grid-template-rows: auto auto; /* Две строки */
+		height: auto; /* Автовысота */
+		margin: 20px; /* Уменьшаем отступы */
+	}
 }
 
 h1,

@@ -6,7 +6,7 @@
 
 .container_right {
 	width: 100%;
-	padding: 2rem 2rem 2rem 2rem;
+	padding: 10px 2rem 2rem 2rem;
 	color: v.$color-grey;
 }
 
@@ -60,7 +60,7 @@
 		margin-top: 30px;
 		display: grid;
 		grid-template-columns: 30px 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1.7fr 1fr 1fr;
 
 		grid-template-areas:
 			'line job-1'
@@ -101,12 +101,12 @@
 			&::after {
 				width: 7px;
 				height: 7px;
-				top: 35%;
+				top: 47%;
 			}
 
 			& span {
 				position: absolute;
-				bottom: 25%;
+				bottom: 20%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 7px;
