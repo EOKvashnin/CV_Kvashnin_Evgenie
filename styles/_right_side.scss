@@ -34,7 +34,7 @@
 }
 
 .work_experience {
-	border: 0.5px solid gray;
+	//border: 0.5px solid gray;
 }
 
 .work {
@@ -60,7 +60,7 @@
 		margin-top: 30px;
 		display: grid;
 		grid-template-columns: 30px 1fr;
-		grid-template-rows: 1.7fr 1fr 1fr;
+		grid-template-rows: 0.8fr 0.9fr 0.5fr;
 
 		grid-template-areas:
 			'line job-1'
@@ -74,7 +74,7 @@
 			margin: 0 auto;
 			grid-area: line;
 			width: 2px;
-			height: 90%;
+			height: 95%;
 			margin: auto;
 			border-radius: 3px;
 			background-color: grey;
@@ -101,12 +101,12 @@
 			&::after {
 				width: 7px;
 				height: 7px;
-				top: 47%;
+				top: 37%;
 			}
 
 			& span {
 				position: absolute;
-				bottom: 20%;
+				bottom: 15%;
 				left: 50%;
 				transform: translateX(-50%);
 				width: 7px;
