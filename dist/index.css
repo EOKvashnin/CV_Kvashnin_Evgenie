@@ -38,8 +38,13 @@ body {
   padding: 15px 0;
 }
 
+.work_experience {
+  border: 0.5px solid gray;
+}
+
 .work__title {
   font-weight: 500;
+  text-transform: uppercase;
   margin-top: 30px;
   position: relative;
 }
@@ -97,8 +102,8 @@ body {
   bottom: 25%;
   left: 50%;
   transform: translateX(-50%);
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   background-color: #fff;
   border-radius: 50%;
   border: 2px solid grey;
@@ -117,6 +122,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  text-transform: none;
 }
 
 .left-side {
@@ -226,12 +232,12 @@ body {
   justify-self: left; /* Горизонтальное выравнивание */
 }
 .education .education__list-item .list-item__icon .icon__logo {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   color: #67b4f2;
 }
 .education .education__text span {
-  font-weight: 110;
+  font-weight: 105;
 }
 .education .education__list-item h4 {
   font-weight: 500;

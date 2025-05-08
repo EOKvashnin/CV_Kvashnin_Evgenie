@@ -34,12 +34,13 @@
 }
 
 .work_experience {
+	border: 0.5px solid gray;
 }
 
 .work {
 	&__title {
 		font-weight: 500;
-
+		text-transform: uppercase;
 		margin-top: 30px;
 		position: relative;
 
@@ -108,8 +109,8 @@
 				bottom: 25%;
 				left: 50%;
 				transform: translateX(-50%);
-				width: 6px;
-				height: 6px;
+				width: 7px;
+				height: 7px;
 				background-color: #fff;
 				border-radius: 50%;
 				border: 2px solid grey;
@@ -132,5 +133,6 @@
 		flex-direction: column;
 		justify-content: start;
 		align-items: start;
+		text-transform: none;
 	}
 }
