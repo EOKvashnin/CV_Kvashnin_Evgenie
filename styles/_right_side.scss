@@ -136,3 +136,60 @@
 		text-transform: none;
 	}
 }
+
+.icon {
+	width: 32px;
+	height: 32px;
+	color: #67b4f2;
+}
+
+.hobby {
+	&__title {
+		font-weight: 500;
+		text-transform: uppercase;
+		position: relative;
+		padding: 15px 0;
+		&::after {
+			content: '';
+			width: 60px;
+			height: 2px;
+			position: absolute;
+			top: 60px;
+			border-radius: 3px;
+			left: 0;
+			background-color: v.$color-grey;
+		}
+	}
+	&__grid {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		grid-template-areas:
+			'hobby-1 hobby-2'
+			'hobby-3 hobby-4';
+
+		gap: 15px;
+
+		.hobby-1 {
+			grid-area: hobby-1;
+		}
+		.hobby-2 {
+			grid-area: hobby-2;
+		}
+		.hobby-3 {
+			grid-area: hobby-3;
+		}
+		.hobby-4 {
+			grid-area: hobby-4;
+		}
+
+		&-wrapper {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: row;
+			gap: 10px;
+		}
+	}
+}
