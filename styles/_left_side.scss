@@ -112,8 +112,9 @@
 		cursor: pointer;
 
 		.list-item__icon {
-			align-self: center; /* Вертикальное выравнивание */
+			align-self: self-start; /* Вертикальное выравнивание */
 			justify-self: left; /* Горизонтальное выравнивание */
+			
 
 			.icon__logo {
 				width: 32px;
