@@ -3,12 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="dist/index.css" />
 		<title>CV</title>
 	</head>
@@ -19,71 +16,152 @@
 					<div class="ImgBx">
 						<img src="img/Ava_git.jpg" alt="" />
 					</div>
-					<h2>Kvashnin Evgenie <br /><span>Frontend Developer</span></h2>
+					<h2 class="about__title">
+						Квашнин Евгений <br /><span>Frontend Разработчик
+
+						</span>
+					</h2>
 				</div>
 				<div class="social__link"></div>
 				<div class="contact">
-					<div class="contact__title">Contact info</div>
+					<h3 class="contact__title">Контакты</h3>
 					<ul class="contact__list-wrap">
-						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#mail"></use>
+						<li class="contact__list-item item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#mail"></use>
 								</svg>
 							</div>
-							<h4 class="text">Email<br /><span>eo_kvashnin@bk.ru</span></h4>
+							<p>eo_kvashnin@bk.ru</p>
 						</li>
-						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#phone"></use>
+						<li class="contact__list-item item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#phone"></use>
 								</svg>
 							</div>
-							<h4 class="text">Phone<br /><span>+7 (921) 257-16-33</span></h4>
+							<p>+7 (921) 257-16-33</p>
 						</li>
 						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#globe"></use>
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#tg"></use>
 								</svg>
 							</div>
-							<h4 class="text">
-								Location<br /><span>Cherepovets, Russia</span>
-							</h4>
+							<p>@EOKvashnin</p>
 						</li>
+						<li class="contact__list-item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#globe"></use>
+								</svg>
+							</div>
+							<p>Череповец, Россия</p>
+							
+						</li>
+						
 					</ul>
 				</div>
 				<div class="education">
-					<div class="education__title">Education</div>
+					<h3 class="education__title">Образование</h3>
 					<ul class="education__wrap">
 						<li class="education__list-item">
 							<div class="list-item__icon">
 								<svg class="icon__logo" aria-label="logo">
-									<use href="img/sprites.svg#university"></use>
+									<use href="img/sprite.svg#university"></use>
 								</svg>
 							</div>
-							<h4 class="education__text">
-								Vologda technical university<br /><span
-									>Management and informatics in technical systems</span
+							<p class="education__text">
+								Вологодский государственный технический университет<br /><span
+									>Управление и информатика в автоматизированных системах</span
 								>
-							</h4>
+							</p>
+							
 						</li>
 						<li class="education__list-item">
 							<div class="list-item__icon">
 								<svg class="icon__logo" aria-label="logo">
-									<use href="img/sprites.svg#education"></use>
+									<use href="img/sprite.svg#education"></use>
 								</svg>
 							</div>
-							<h4 class="education__text">
-								Cherepovets Metallurgical College<br /><span>
-									Software for computing equipment and automated systems</span
+							<p class="education__text">
+								Череповецкий металлургический колледж<br />
+								<span>Программное обеспечение для вычислительной техники и автоматизированных систем
+									</span
 								>
-							</h4>
+							</p>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<section class="right-side"></section>
+			<section class="right-side">
+				<div class="container_right">
+					<div class="profile">
+						<h2 class="profile__title">Profile</h2>
+						<p class="profile__desc">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+							modi vero officia dolorum deleniti eius, optio, veritatis
+							reprehenderit ex voluptas eaque quisquam facere asperiores
+							consectetur?
+						</p>
+					</div>
+					<div class="work_experience work">
+						<h2 class="work__title">Work Experience</h>
+						<div class="work__grid">
+							<div class="work__grid-line line"><span></span></div>
+							<div class="work__wrapper job-1">
+								<h6 class="job__title">AO "Apatit" / <span> Expert</span></h6>
+								<p class="job__date">From Feb 2022 to now</p>
+								<p class="job_desc">Data analysis and process optimization: <br>
+									- Conducting Core HR system audit of the enterprise, identifying bottlenecks and inefficient processes. <br>
+									- Development and implementation of solutions to optimize HR business processes based on analytical findings. <br>	
+									Working with databases: <br>
+									- Creating and maintaining a database (PostgreSQL) of custom HR information system functionality.<br>
+									- Writing SQL queries for data extraction, processing and analysis.<br>
+									- Automation of data loading into the database using Python scripts.</p>
+							</div>
+							<div class="work__wrapper job-2">
+								<h6 class="job__title">PAO "Severstal" / <span> Manager</span></h6>
+								<p class="job__date">From 2019 to 2022</p>
+								<p class="job_desc">
+									- Analyzing production data to identify key trends, problems, and prepare reports for management. Development of proposals for process optimization and efficiency improvement.<br>
+									- Creation and implementation of analytical dashboards (Power BI, Excel) for monitoring critical production metrics.<br>
+									- Working with big data from various sources (CRM, ERP, production systems): analysis, identification of patterns, calculation of economic efficiency and investment attractiveness of projects.<br>
+									- Automation of data collection and processing processes using Python, testing video recognition models for analyzing production operations.<br>
+									- Introducing innovations: digital assistants for steel casting and VR solutions for staff training, which increased the accuracy of processes and reduced training time.</p>
+							</div>
+							
+							
+					</div>
+					<div class="hobby">
+						<h3 class="hobby__title">HOBBIES</h3>
+						<div class="hobby__grid">
+							<div class="hobby__grid-wrapper hobby-1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="currentColor" d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8z"/></svg>
+								<h5>codind</h5>
+							</div>
+							<div class="hobby__grid-wrapper hobby-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><circle cx="4" cy="12" r="2.25"/><circle cx="12" cy="11" r="2.25"/><path d="M6.25 12V2.75l8-1V11"/></g></svg>
+								<h5>Music</h5>
+							</div>
+							<div class="hobby__grid-wrapper hobby-3">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" d="M215.344 22.813L205.03 37.906l71.782 46.375l8.938-12.81c-15.62-23.633-44.153-40.97-70.406-48.657zm-38.47 18.843c-28.32 35.34-79.16 105.16-105.718 145.313c61.96 26.364 113.013 69.562 133.22 119.593c5.064 12.54 8.125 25.566 8.78 38.75c36.873-9.75 80.34-36.93 117.25-70.5c30.105-27.38 55.912-59.115 71.406-87.75L176.875 41.655zm240.657 155.53c-16.836 31.038-43.713 63.084-74.717 91.283c-40.21 36.57-87.238 66.474-130.47 76.03a105.8 105.8 0 0 1-6.343 24.72c-8.91 22.832-26.23 44.633-52.656 64.592c64.678 10.955 135.135-13.105 195.844-53.687c64.21-42.923 116.84-104.112 139.28-157.063l-70.937-45.875zM84.814 213.782L16.5 313.72v143.717l135.875-194.812c-18.23-18.513-41.412-35.295-67.563-48.844z"/></svg>
+								<h5>Wood work</h5>
+								
+							</div>
+							<div class="hobby__grid-wrapper hobby-4">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m20.274 9.869l-3.442-4.915l1.639-1.147l3.441 4.915zm-1.884 2.54L16.67 9.95l-8.192 5.736l1.72 2.457l-1.638 1.148l-4.588-6.554L5.61 11.59l1.72 2.458l8.192-5.736l-1.72-2.458l1.638-1.147l4.588 6.554zm2.375-5.326l1.638-1.147l-1.147-1.638l-1.638 1.147zM7.168 19.046l-3.442-4.915l-1.638 1.147l3.441 4.915zm-2.786-.491l-1.638 1.147l-1.147-1.638l1.638-1.147z"/></svg>
+								<h5>GYM</h5>
+							</div>
+						</div>
+					</div>
+				</div> 
+
+				<div class="code_level_1">
+					<div class="code_level_2"></div>
+				</div>
+			</section>
+
 		</div>
 	</body>
 </html>

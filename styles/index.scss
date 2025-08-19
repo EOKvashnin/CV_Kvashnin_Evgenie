@@ -1,8 +1,10 @@
 @use 'importer';
+@use 'sass:color';
 
 body {
-	background-color: grey;
-	background-color: #868686;
+	background: url('/img/texture.webp') center/cover no-repeat;
+	background-attachment: fixed;
+	// background-color: #868686;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,8 +17,15 @@ body {
 	max-width: 900px;
 	height: 1200px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-	margin: 40px;
+	margin: 40px auto 40px;
 	grid-template-columns: 1fr 2fr;
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr; /* Одна колонка */
+		grid-template-rows: auto auto; /* Две строки */
+		height: auto; /* Автовысота */
+		margin: 20px; /* Уменьшаем отступы */
+	}
 }
 
 h1,
@@ -27,4 +36,9 @@ h5,
 h6,
 p {
 	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 500;
 }

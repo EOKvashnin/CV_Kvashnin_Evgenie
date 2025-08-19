@@ -1,3 +1,215 @@
+@use 'variables' as v;
+
 .right-side {
 	background-color: #fff;
+}
+
+.container_right {
+	width: 100%;
+	padding: 10px 2rem 2rem 2rem;
+	color: v.$color-grey;
+}
+
+.profile {
+	&__title {
+		font-weight: 500;
+		text-transform: uppercase;
+		position: relative;
+		padding: 15px 0;
+
+		&::after {
+			content: '';
+			width: 60px;
+			height: 2px;
+			position: absolute;
+			top: 60px;
+			border-radius: 3px;
+			left: 0;
+			background-color: v.$color-grey;
+		}
+	}
+	&__desc {
+		padding: 15px 0;
+	}
+}
+
+.work_experience {
+	//border: 0.5px solid gray;
+}
+
+.work {
+	&__title {
+		font-weight: 500;
+		text-transform: uppercase;
+		margin-top: 30px;
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 150px;
+			height: 2px;
+			border-radius: 3px;
+			position: absolute;
+			top: 40px;
+			left: 0;
+			background-color: v.$color-darkgrey;
+		}
+	}
+
+	&__grid {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 30px 1fr;
+		grid-template-rows: 0.4fr 0.6fr;
+
+		grid-template-areas:
+			'line job-1'
+			'line job-2'
+			'line job-3';
+
+		gap: 15px;
+
+		&-line {
+			position: relative;
+			margin: 0 auto;
+			grid-area: line;
+			width: 2px;
+			height: 95%;
+			margin: auto;
+			border-radius: 3px;
+			background-color: grey;
+
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 6px;
+				height: 6px;
+				background-color: #fff;
+				border-radius: 50%;
+				border: 2px solid grey;
+			}
+
+			&::before {
+				top: 0;
+				width: 10px;
+				height: 10px;
+			}
+
+			&::after {
+				width: 7px;
+				height: 7px;
+				top: 45%;
+			}
+
+			// & span {
+			// 	position: absolute;
+			// 	bottom: 15%;
+			// 	left: 50%;
+			// 	transform: translateX(-50%);
+			// 	width: 7px;
+			// 	height: 7px;
+			// 	background-color: #fff;
+			// 	border-radius: 50%;
+			// 	border: 2px solid grey;
+			// }
+		}
+
+		.job-1 {
+			grid-area: job-1;
+		}
+		.job-2 {
+			grid-area: job-2;
+		}
+		.job-3 {
+			grid-area: job-3;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		text-transform: none;
+	}
+}
+
+.icon {
+	width: 32px;
+	height: 32px;
+	color: #67b4f2;
+}
+
+.hobby {
+	&__title {
+		font-weight: 500;
+		text-transform: uppercase;
+		position: relative;
+		padding: 15px 0;
+		&::after {
+			content: '';
+			width: 60px;
+			height: 2px;
+			position: absolute;
+			top: 60px;
+			border-radius: 3px;
+			left: 0;
+			background-color: v.$color-grey;
+		}
+	}
+	&__grid {
+		margin-top: 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		grid-template-areas:
+			'hobby-1 hobby-2'
+			'hobby-3 hobby-4';
+
+		gap: 15px;
+
+		.hobby-1 {
+			grid-area: hobby-1;
+		}
+		.hobby-2 {
+			grid-area: hobby-2;
+		}
+		.hobby-3 {
+			grid-area: hobby-3;
+		}
+		.hobby-4 {
+			grid-area: hobby-4;
+		}
+
+		&-wrapper {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: row;
+			gap: 10px;
+		}
+	}
+}
+
+.code_level_1 {
+	margin-top: 20px;
+	content: '';
+	width: 400px;
+	height: 4px;
+	background: #000;
+	border-radius: 2px;
+	position: relative;
+}
+.code_level_2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 300px;
+	height: 4px;
+	border-radius: 2px;
+	background: #e90707;
 }
