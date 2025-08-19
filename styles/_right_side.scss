@@ -60,7 +60,7 @@
 		margin-top: 30px;
 		display: grid;
 		grid-template-columns: 30px 1fr;
-		grid-template-rows: 0.8fr 0.9fr 0.5fr;
+		grid-template-rows: 0.4fr 0.6fr;
 
 		grid-template-areas:
 			'line job-1'
@@ -101,20 +101,20 @@
 			&::after {
 				width: 7px;
 				height: 7px;
-				top: 37%;
+				top: 45%;
 			}
 
-			& span {
-				position: absolute;
-				bottom: 15%;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 7px;
-				height: 7px;
-				background-color: #fff;
-				border-radius: 50%;
-				border: 2px solid grey;
-			}
+			// & span {
+			// 	position: absolute;
+			// 	bottom: 15%;
+			// 	left: 50%;
+			// 	transform: translateX(-50%);
+			// 	width: 7px;
+			// 	height: 7px;
+			// 	background-color: #fff;
+			// 	border-radius: 50%;
+			// 	border: 2px solid grey;
+			// }
 		}
 
 		.job-1 {
@@ -192,4 +192,24 @@
 			gap: 10px;
 		}
 	}
+}
+
+.code_level_1 {
+	margin-top: 20px;
+	content: '';
+	width: 400px;
+	height: 4px;
+	background: #000;
+	border-radius: 2px;
+	position: relative;
+}
+.code_level_2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 300px;
+	height: 4px;
+	border-radius: 2px;
+	background: #e90707;
 }

@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .right-side {
@@ -58,7 +58,7 @@ body {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 30px 1fr;
-  grid-template-rows: 0.8fr 0.9fr 0.5fr;
+  grid-template-rows: 0.4fr 0.6fr;
   grid-template-areas: "line job-1" "line job-2" "line job-3";
   gap: 15px;
 }
@@ -91,18 +91,7 @@ body {
 .work__grid-line::after {
   width: 7px;
   height: 7px;
-  top: 37%;
-}
-.work__grid-line span {
-  position: absolute;
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 7px;
-  height: 7px;
-  background-color: #fff;
-  border-radius: 50%;
-  border: 2px solid grey;
+  top: 45%;
 }
 .work__grid .job-1 {
   grid-area: job-1;
@@ -170,6 +159,27 @@ body {
   gap: 10px;
 }
 
+.code_level_1 {
+  margin-top: 20px;
+  content: "";
+  width: 400px;
+  height: 4px;
+  background: #000;
+  border-radius: 2px;
+  position: relative;
+}
+
+.code_level_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 300px;
+  height: 4px;
+  border-radius: 2px;
+  background: #e90707;
+}
+
 .left-side {
   display: flex;
   flex-direction: column;
@@ -193,12 +203,12 @@ body {
   line-height: 45px;
   text-transform: uppercase;
   color: #fff;
-  font-weight: 300;
+  font-weight: 500;
   border-bottom: 1px solid rgb(72, 70, 70);
 }
 .about span {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -207,7 +217,7 @@ body {
   width: 250px;
   margin: 0 20px 0 25px;
   max-width: 280px;
-  padding: 25px 0;
+  padding: 25px 5px 5px 5px;
   /* padding-left: 8px; */
   border-bottom: 1px solid rgb(72, 70, 70);
 }
@@ -216,6 +226,7 @@ body {
   font-weight: 700;
   letter-spacing: 1.5px;
   /* padding-left: 15px; */
+  transition: padding-left 0.3s ease;
 }
 
 .contact__list-wrap {
@@ -223,14 +234,16 @@ body {
   margin-top: 0;
 }
 .contact__list-wrap .contact__list-item {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
   margin: 10px 0 10px 0;
   list-style: none;
   cursor: pointer;
 }
-.contact__list-wrap .contact__list-item span {
-  font-weight: 100;
+.contact__list-wrap .contact__list-item p {
+  padding-top: 3px;
 }
 
 .item-text {
@@ -239,6 +252,7 @@ body {
 .item-icon {
   align-self: center; /* Вертикальное выравнивание */
   justify-self: left; /* Горизонтальное выравнивание */
+  transition: transform 0.4s ease;
 }
 .item-icon__logo {
   width: 31px;
@@ -253,12 +267,12 @@ body {
   max-width: 280px;
   padding: 25px 0;
   /* padding-left: 8px; */
-  border-bottom: 1px solid rgb(72, 70, 70);
 }
 .education .education__title {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.5px;
+  transition: padding-left 0.3s ease;
 }
 .education .education__wrap {
   padding: 0;
@@ -269,8 +283,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin: 10px 0 10px 0;
+  padding: 5px;
   list-style: none;
   cursor: pointer;
+  border-radius: 10px;
+  border-left: 3px solid transparent;
 }
 .education .education__list-item .list-item__icon {
   align-self: self-start; /* Вертикальное выравнивание */
@@ -280,12 +297,34 @@ body {
   width: 32px;
   height: 32px;
   color: #67b4f2;
+  transition: transform 0.3s ease;
 }
-.education .education__text span {
-  font-weight: 105;
-}
-.education .education__list-item h4 {
+.education .education__list-item .education__list-item h4 {
   font-weight: 500;
+}
+.education .education__list-item .education__text span {
+  font-weight: 100;
+}
+
+.contact:hover .contact__title {
+  padding-left: 8px;
+}
+
+.contact__list-item:hover .item-icon {
+  transform: scale(1.1) rotate(6deg);
+}
+
+.contact__list-item:hover .item-icon .item-icon__logo {
+  color: #fff;
+}
+
+.education:hover .education__title {
+  padding-left: 8px;
+}
+
+.education__list-item:hover .list-item__icon .icon__logo {
+  transform: scale(1.2) rotate(6deg);
+  color: #fff;
 }
 
 body {
@@ -303,7 +342,7 @@ body {
   max-width: 900px;
   height: 1200px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  margin: 40px;
+  margin: 40px auto 40px;
   grid-template-columns: 1fr 2fr;
 }
 @media (max-width: 768px) {
