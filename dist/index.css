@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter Tight", sans-serif;
 }
 
 .right-side {
@@ -15,7 +15,7 @@ body {
 .container_right {
   width: 100%;
   padding: 10px 2rem 2rem 2rem;
-  color: #393d3f;
+  color: #4a4d4e;
 }
 
 .profile__title {
@@ -23,6 +23,7 @@ body {
   text-transform: uppercase;
   position: relative;
   padding: 15px 0;
+  margin-bottom: 20px;
 }
 .profile__title::after {
   content: "";
@@ -30,12 +31,13 @@ body {
   height: 2px;
   position: absolute;
   top: 60px;
-  border-radius: 3px;
+  border-radius: 2px;
   left: 0;
-  background-color: #393d3f;
+  background-color: #4a4d4e;
 }
-.profile__desc {
-  padding: 15px 0;
+.profile__header h4 {
+  margin: 5px;
+  transition: color 0.5s ease;
 }
 
 .work__title {
@@ -52,7 +54,7 @@ body {
   position: absolute;
   top: 40px;
   left: 0;
-  background-color: #232323;
+  background-color: #4a4d4e;
 }
 .work__grid {
   margin-top: 30px;
@@ -91,7 +93,7 @@ body {
 .work__grid-line::after {
   width: 7px;
   height: 7px;
-  top: 45%;
+  top: 60%;
 }
 .work__grid .job-1 {
   grid-area: job-1;
@@ -109,6 +111,9 @@ body {
   align-items: start;
   text-transform: none;
 }
+.work__wrapper ul {
+  font-size: 14px;
+}
 
 .icon {
   width: 32px;
@@ -116,47 +121,30 @@ body {
   color: #67b4f2;
 }
 
-.hobby__title {
+.skills__title {
+  font-size: 28px;
   font-weight: 500;
   text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 15px;
   position: relative;
-  padding: 15px 0;
 }
-.hobby__title::after {
+.skills__title::after {
   content: "";
-  width: 60px;
+  width: 100px;
   height: 2px;
+  border-radius: 1px;
   position: absolute;
-  top: 60px;
-  border-radius: 3px;
+  top: 42px;
   left: 0;
-  background-color: #393d3f;
+  background-color: #4a4d4e;
 }
-.hobby__grid {
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "hobby-1 hobby-2" "hobby-3 hobby-4";
-  gap: 15px;
+.skills__desc {
+  font-size: 14px;
+  font-weight: 500;
 }
-.hobby__grid .hobby-1 {
-  grid-area: hobby-1;
-}
-.hobby__grid .hobby-2 {
-  grid-area: hobby-2;
-}
-.hobby__grid .hobby-3 {
-  grid-area: hobby-3;
-}
-.hobby__grid .hobby-4 {
-  grid-area: hobby-4;
-}
-.hobby__grid-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 10px;
+.skills__desc li {
+  padding: 3px;
 }
 
 .code_level_1 {
@@ -178,6 +166,10 @@ body {
   height: 4px;
   border-radius: 2px;
   background: #e90707;
+}
+
+.profile:hover .profile__header {
+  color: #825c5c;
 }
 
 .left-side {
@@ -268,6 +260,7 @@ body {
   margin: 0 20px 0 25px;
   max-width: 280px;
   padding: 25px 0;
+  border-bottom: 1px solid rgb(72, 70, 70);
   /* padding-left: 8px; */
 }
 .education .education__title {
@@ -305,6 +298,41 @@ body {
   font-size: 13px;
   font-weight: 100;
   transition: font-size 0.3s ease;
+}
+
+.hobby {
+  position: relative;
+  width: 250px;
+  margin: 0 20px 0 25px;
+  max-width: 280px;
+  padding: 25px 0;
+}
+.hobby__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  transition: padding-left 0.3s ease;
+}
+.hobby__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.hobby__list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 25px;
+  margin: 10px 0 10px 0;
+  list-style: none;
+  cursor: pointer;
+  transition: letter-spacing 0.3s ease;
+  text-align: center;
+}
+.hobby__list-item svg {
+  display: block;
+  margin: 0 auto;
 }
 
 .contact:hover .contact__title {

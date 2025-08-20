@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .left-side {
 	display: flex;
 	flex-direction: column;
@@ -84,7 +86,7 @@
 		&__logo {
 			width: 31px;
 			height: 31px;
-			color: #67b4f2;
+			color: v.$color-blue;
 		}
 	}
 }
@@ -95,6 +97,7 @@
 	margin: 0 20px 0 25px;
 	max-width: 280px;
 	padding: 25px 0;
+	border-bottom: 1px solid rgb(72, 70, 70);
 
 	/* padding-left: 8px; */
 
@@ -128,7 +131,7 @@
 			.icon__logo {
 				width: 32px;
 				height: 32px;
-				color: #67b4f2;
+				color: v.$color-blue;
 				transition: transform 0.3s ease;
 			}
 		}
@@ -137,6 +140,43 @@
 			font-size: 13px;
 			font-weight: 100;
 			transition: font-size 0.3s ease;
+		}
+	}
+}
+
+.hobby {
+	position: relative;
+	width: 250px;
+	margin: 0 20px 0 25px;
+	max-width: 280px;
+	padding: 25px 0;
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		transition: padding-left 0.3s ease;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		&-item {
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+			gap: 25px;
+			margin: 10px 0 10px 0;
+			list-style: none;
+			cursor: pointer;
+			transition: letter-spacing 0.3s ease;
+			text-align: center;
+
+			svg {
+				display: block;
+				margin: 0 auto;
+			}
 		}
 	}
 }
