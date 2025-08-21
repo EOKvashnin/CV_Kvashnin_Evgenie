@@ -135,7 +135,7 @@
 					<div class="profile">
 						<h2 class="profile__title">Обо мне</h2>
 						<div class="profile__header">
-							<h4>Frontend-разработчик с сильным бэкграундом в анализе данных и создании пользовательских интерфейсов.</h4>
+							<h4>Frontend-разработчик с сильным бэкграундом в анализе данных <br> и создании пользовательских интерфейсов.</h4>
 						</div>
 						<p class="profile__desc">
 							
@@ -146,8 +146,8 @@
 							<p style="text-indent: 1.5em;">Мои сильные стороны: быстрая обучаемость, аналитическое мышление, понимание полного цикла разработки продукта и страсть к созданию удобных интерфейсов.</p>
 						</p>
 					</div>
-					<div class="work_experience work">
-						<h2 class="work__title">Опыт работы</h>
+					<div class="work">
+						<h2 class="work__title">Опыт работы</h2>
 						<div class="work__grid">
 							<div class="work__grid-line line"></div>
 							<div class="work__wrapper job">
@@ -190,20 +190,105 @@
 				<div class="skills">
 						<h2 class="skills__title">Навыки</h2>
 						<h4>Основные освоенные технологии:</h4>
-						<ul class="skills__desc">
-							<li><strong>JavaScript (ES6+)</strong>: Изучен и применен в проектах.</li>
-							<li><strong>Vue.js</strong>: Активное изучение и применение в текущих задачах. (Vue 2/3, Composition API, Vuex/Pinia)..</li>
-							<li><strong>HTML5 / CSS3</strong>: Семантическая верстка, адаптивная и кроссбраузерная верстка.</li>
-							<li><strong>React:</strong> Базовое понимание (если делал проект, можно указать).</li>
-							<li><strong>Git</strong></li>
+						<ul class="skills__list">
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#html5"></use>
+									</svg>
+									<svg class="skills__list-item-logo-svg" id="css3" aria-label="logo">
+										<use href="img/skills_sprites.svg#css3"></use>
+									</svg>
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>HTML5 / CSS3</strong>: Семантическая верстка, адаптивная и кроссбраузерная верстка. <br>
+									<button class="btn"><a href="https://eokvashnin.github.io/Aivazovski" class="btn__link" target="_blank">Ayvazovskiy_IC</a></button>
+									<button class="btn"><a href="https://eokvashnin.github.io/landing_live_streaming/" class="btn__link" target="_blank">landing_live_streaming</a></button>
+																							
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" id="js" aria-label="logo">
+									<use href="img/skills_sprites.svg#js"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>JavaScript (ES6+)</strong>: Изучен и применен в проектах. <br>
+									<button class="btn"><a href="https://eokvashnin.github.io/TODO_App/" class="btn__link" target="_blank">ToDo_App</a></button>
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#react"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>React</strong>: Разработал проект с обучающим курсом по React. В ходе реализации освоил React router, Lazy Loading, Pagination, запросы на удаленный сервер и др.  <br>
+									<button class="btn"><a href="https://react-app-course-ic8l.onrender.com/" class="btn__link" target="_blank"> React App course</a></button>
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#vue"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>Vue.js</strong>: Активное изучение и применение в текущих задачах. (Vue 2/3, Composition API, Vuex/Pinia)..<br>
+									
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#git"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>Git</strong>: git add .,git commit -m, git push, git switch -c<br>
+									
+								</div>							
+							</li>
+													
 					</ul>
-						<h4>Инструменты и сопутствующие навыки</h4>
-						<ul class="skills__desc">
-							<li><strong>Бэкенд для фронтенда:</strong> REST API, SQL (PostgreSQL), ETL</li>
-							<li><strong>Дизайн и прототипирование:</strong> Разработка UI-прототипов, Figma, MS Power Point</li>
-							<li><strong>Продуктивность:</strong> Jira, Confluence, опыт работы в Scrum-командах.</li>
+					<h4>Инструменты и сопутствующие навыки:</h4>
+						<ul class="skills-other__list">
+							<li class="skills-other__list-item">
+								<div class="skills-other__list-item-logo">
+									<div class="skills-other__list-item-logo-icons">
+										<svg class="skills-other__list-item-logo-icons-svg" aria-label="logo">
+										<use href="img/skills_sprites.svg#api"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#psql"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#db"></use>
+										</svg> 
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#figma"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#point"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#jira"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="skills-other__list-item-desc">
+									<strong>Бэкенд для фронтенда:</strong>REST API, SQL (PostgreSQL), ETL <br>
+									<strong>Дизайн и прототипирование:</strong>: Разработка UI-прототипов, Figma, MS Power Point <br>
+									<strong>Продуктивность:</strong>Jira, Confluence, опыт работы в Scrum-командах.<br>
+								</div>							
+							</li>						
 						</ul>
-
 					</div>
 			</section>
 

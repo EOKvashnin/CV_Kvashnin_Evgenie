@@ -81,12 +81,12 @@
 	&-icon {
 		align-self: center; /* Вертикальное выравнивание */
 		justify-self: left; /* Горизонтальное выравнивание */
-		transition: transform 0.3s ease;
 
 		&__logo {
 			width: 31px;
 			height: 31px;
 			color: v.$color-blue;
+			transition: transform 0.3s ease, color 0.3s ease;
 		}
 	}
 }
@@ -132,7 +132,7 @@
 				width: 32px;
 				height: 32px;
 				color: v.$color-blue;
-				transition: transform 0.3s ease;
+				transition: transform 0.3s ease, color 0.3s ease;
 			}
 		}
 
@@ -175,6 +175,7 @@
 			&-icon {
 				align-self: flex-start;
 				justify-self: left;
+				transition: transform 0.3s ease, color 0.3s ease;
 			}
 
 			& p {
@@ -187,7 +188,7 @@
 		width: 30px;
 		height: 30px;
 		color: v.$color-blue;
-		transition: transform 0.3s ease;
+		transition: transform 0.3s ease, fill 0.3s ease, color 0.3s ease;
 	}
 }
 
@@ -204,12 +205,10 @@
 	letter-spacing: 0.02em;
 }
 
-.contact__list-item:hover .item-icon {
-	transform: scale(1.1) rotate(6deg);
-}
-
+.contact__list-item:hover .item-icon__logo,
 .education__list-item:hover .list-item__icon .icon__logo,
 .hobby__list-item:hover .hobby__icon-logo {
 	transform: scale(1.1) rotate(6deg);
 	color: #fff;
+	fill: #fff;
 }
