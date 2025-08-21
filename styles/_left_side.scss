@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .left-side {
 	display: flex;
 	flex-direction: column;
@@ -84,7 +86,7 @@
 		&__logo {
 			width: 31px;
 			height: 31px;
-			color: #67b4f2;
+			color: v.$color-blue;
 		}
 	}
 }
@@ -95,6 +97,7 @@
 	margin: 0 20px 0 25px;
 	max-width: 280px;
 	padding: 25px 0;
+	border-bottom: 1px solid rgb(72, 70, 70);
 
 	/* padding-left: 8px; */
 
@@ -128,7 +131,7 @@
 			.icon__logo {
 				width: 32px;
 				height: 32px;
-				color: #67b4f2;
+				color: v.$color-blue;
 				transition: transform 0.3s ease;
 			}
 		}
@@ -141,32 +144,72 @@
 	}
 }
 
+.hobby {
+	position: relative;
+	width: 250px;
+	margin: 0 20px 0 25px;
+	max-width: 280px;
+	padding: 25px 0;
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 1.5px;
+		transition: padding-left 0.3s ease;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 25px;
+			margin: 6px 0 2px 0;
+			cursor: pointer;
+			transition: letter-spacing 0.3s ease;
+
+			&-icon {
+				align-self: flex-start;
+				justify-self: left;
+			}
+
+			& p {
+				margin: 0;
+			}
+		}
+	}
+
+	&__icon-logo {
+		width: 30px;
+		height: 30px;
+		color: v.$color-blue;
+		transition: transform 0.3s ease;
+	}
+}
+
 //HOVER
 
-.contact:hover .contact__title {
+.contact:hover .contact__title,
+.education:hover .education__title,
+.hobby:hover .hobby__title {
 	padding-left: 8px;
 }
 
-.contact__list-item:hover {
+.contact__list-item:hover,
+.hobby__list-item:hover {
 	letter-spacing: 0.02em;
 }
 
 .contact__list-item:hover .item-icon {
 	transform: scale(1.1) rotate(6deg);
 }
-.contact__list-item:hover .item-icon .item-icon__logo {
-	color: #fff;
-}
 
-.education:hover .education__title {
-	padding-left: 8px;
-}
-.education__text:hover span {
-	font-size: 12px;
-}
-
-.education__list-item:hover .list-item__icon .icon__logo {
-	//background: #67b4f2;
-	transform: scale(1.2) rotate(6deg);
+.education__list-item:hover .list-item__icon .icon__logo,
+.hobby__list-item:hover .hobby__icon-logo {
+	transform: scale(1.1) rotate(6deg);
 	color: #fff;
 }
