@@ -18,12 +18,23 @@ body {
   color: #4a4d4e;
 }
 
+.profile:hover .profile__header {
+  letter-spacing: 0.01em;
+}
+.profile:hover .profile__title {
+  transform: translateX(10px);
+}
+.profile:hover .profile__title::after {
+  width: 100px;
+  background-color: red;
+}
 .profile__title {
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
   padding: 15px 0;
   margin-bottom: 20px;
+  transition: transform 0.4s ease;
 }
 .profile__title::after {
   content: "";
@@ -34,27 +45,38 @@ body {
   border-radius: 2px;
   left: 0;
   background-color: #4a4d4e;
+  transition: width 0.4s ease, background-color 0.4s ease;
 }
 .profile__header h4 {
   margin: 5px;
-  transition: color 0.5s ease;
+  transition: letter-spacing 0.4s ease;
 }
 
+.work:hover .work__title {
+  transform: translateX(10px);
+}
+.work:hover .work__title::after {
+  transform: translateX(3px);
+  width: 160px;
+  background-color: red;
+}
 .work__title {
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 30px;
   position: relative;
+  transition: transform 0.4s ease;
 }
 .work__title::after {
   content: "";
-  width: 150px;
+  width: 60px;
   height: 2px;
   border-radius: 3px;
   position: absolute;
   top: 40px;
   left: 0;
   background-color: #4a4d4e;
+  transition: width 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
 }
 .work__grid {
   margin-top: 30px;
@@ -115,12 +137,27 @@ body {
   font-size: 14px;
 }
 
+.job:hover .job__title {
+  letter-spacing: 0.01rem;
+}
+.job__title {
+  transition: letter-spacing 0.4s ease;
+}
+
 .icon {
   width: 32px;
   height: 32px;
   color: #67b4f2;
 }
 
+.skills:hover .skills__title {
+  transform: translateX(10px);
+}
+.skills:hover .skills__title::after {
+  transform: translateX(3px);
+  width: 110px;
+  background-color: red;
+}
 .skills__title {
   font-size: 28px;
   font-weight: 500;
@@ -128,16 +165,18 @@ body {
   margin-bottom: 20px;
   margin-top: 15px;
   position: relative;
+  transition: transform 0.4s ease;
 }
 .skills__title::after {
   content: "";
-  width: 100px;
+  width: 60px;
   height: 2px;
   border-radius: 1px;
   position: absolute;
   top: 42px;
   left: 0;
   background-color: #4a4d4e;
+  transition: width 0.4s ease, background-color 0.4s ease, transform 0.4s ease;
 }
 .skills__list {
   font-size: 14px;
@@ -161,10 +200,58 @@ body {
   width: 32px;
   height: 32px;
   color: #4a4d4e;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
 .skills__desc li {
   padding: 3px;
+}
+.skills-other__title {
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  position: relative;
+}
+.skills-other__title::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  border-radius: 1px;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  background-color: #4a4d4e;
+}
+.skills-other__list {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+}
+.skills-other__list-item {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 3px;
+}
+.skills-other__list-item-logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.skills-other__list-item-logo-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.skills-other__list-item-logo-icons-svg {
+  width: 24px;
+  height: 24px;
+  color: #4a4d4e;
+  transition: transform 0.4s ease, color 0.4s ease;
 }
 
 #js {
@@ -203,10 +290,6 @@ body {
   height: 4px;
   border-radius: 2px;
   background: #e90707;
-}
-
-.profile:hover .profile__header {
-  color: #825c5c;
 }
 
 .left-side {
@@ -376,7 +459,7 @@ body {
   width: 30px;
   height: 30px;
   color: #67b4f2;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, fill 0.3s ease, color 0.3s ease;
 }
 
 .contact:hover .contact__title,

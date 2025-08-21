@@ -11,12 +11,26 @@
 }
 
 .profile {
+	&:hover {
+		.profile__header {
+			letter-spacing: 0.01em;
+		}
+		.profile__title {
+			transform: translateX(10px);
+			&::after {
+				width: 100px;
+				background-color: red;
+			}
+		}
+	}
+
 	&__title {
 		font-weight: 500;
 		text-transform: uppercase;
 		position: relative;
 		padding: 15px 0;
 		margin-bottom: 20px;
+		transition: transform 0.4s ease;
 
 		&::after {
 			content: '';
@@ -27,30 +41,45 @@
 			border-radius: 2px;
 			left: 0;
 			background-color: v.$color-grey;
+			transition: width 0.4s ease, background-color 0.4s ease;
 		}
 	}
 	&__header h4 {
 		margin: 5px;
-		transition: color 0.5s ease;
+		transition: letter-spacing 0.4s ease;
 	}
 }
 
 .work {
+	&:hover {
+		.work__title {
+			transform: translateX(10px);
+			&::after {
+				transform: translateX(3px);
+				width: 160px;
+				background-color: red;
+			}
+		}
+	}
+
 	&__title {
 		font-weight: 500;
 		text-transform: uppercase;
 		margin-top: 30px;
 		position: relative;
+		transition: transform 0.4s ease;
 
 		&::after {
 			content: '';
-			width: 150px;
+			width: 60px;
 			height: 2px;
 			border-radius: 3px;
 			position: absolute;
 			top: 40px;
 			left: 0;
 			background-color: v.$color-grey;
+			transition: width 0.4s ease, background-color 0.4s ease,
+				transform 0.4s ease;
 		}
 	}
 
@@ -126,6 +155,16 @@
 		}
 	}
 }
+.job {
+	&:hover {
+		.job__title {
+			letter-spacing: 0.01rem;
+		}
+	}
+	&__title {
+		transition: letter-spacing 0.4s ease;
+	}
+}
 
 .icon {
 	width: 32px;
@@ -134,6 +173,17 @@
 }
 
 .skills {
+	&:hover {
+		.skills__title {
+			transform: translateX(10px);
+			&::after {
+				transform: translateX(3px);
+				width: 110px;
+				background-color: red;
+			}
+		}
+	}
+
 	&__title {
 		font-size: 28px;
 		font-weight: 500;
@@ -141,16 +191,19 @@
 		margin-bottom: 20px;
 		margin-top: 15px;
 		position: relative;
+		transition: transform 0.4s ease;
 
 		&::after {
 			content: '';
-			width: 100px;
+			width: 60px;
 			height: 2px;
 			border-radius: 1px;
 			position: absolute;
 			top: 42px;
 			left: 0;
 			background-color: v.$color-grey;
+			transition: width 0.4s ease, background-color 0.4s ease,
+				transform 0.4s ease;
 		}
 	}
 	&__list {
@@ -174,13 +227,68 @@
 					width: 32px;
 					height: 32px;
 					color: v.$color-grey;
-					transition: transform 0.3s ease, color 0.3s ease;
+					transition: transform 0.4s ease, color 0.4s ease;
 				}
 			}
 		}
 	}
 	&__desc li {
 		padding: 3px;
+	}
+	&-other {
+		&__title {
+			font-size: 28px;
+			font-weight: 500;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			margin-top: 15px;
+			position: relative;
+
+			&::after {
+				content: '';
+				width: 100px;
+				height: 2px;
+				border-radius: 1px;
+				position: absolute;
+				top: 42px;
+				left: 0;
+				background-color: v.$color-grey;
+			}
+		}
+		&__list {
+			font-size: 14px;
+			font-weight: 500;
+			padding: 0;
+
+			&-item {
+				list-style: none;
+				display: grid;
+				grid-template-columns: 1fr 5fr;
+				justify-content: start;
+				align-items: flex-start;
+				flex-wrap: wrap;
+				margin-top: 3px;
+
+				&-logo {
+					display: flex;
+					justify-content: center;
+					align-items: flex-start;
+
+					&-icons {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 5px;
+
+						&-svg {
+							width: 24px;
+							height: 24px;
+							color: v.$color-grey;
+							transition: transform 0.4s ease, color 0.4s ease;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -219,10 +327,4 @@
 	height: 4px;
 	border-radius: 2px;
 	background: #e90707;
-}
-
-//-----HOVER-----//
-
-.profile:hover .profile__header {
-	color: #825c5c;
 }
