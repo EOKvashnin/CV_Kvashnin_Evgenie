@@ -150,12 +150,14 @@
 	margin: 0 20px 0 25px;
 	max-width: 280px;
 	padding: 25px 0;
+
 	&__title {
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: 1.5px;
 		transition: padding-left 0.3s ease;
 	}
+
 	&__list {
 		display: flex;
 		flex-direction: column;
@@ -164,46 +166,50 @@
 
 		&-item {
 			display: flex;
-			flex-direction: row;
-			align-items: start;
+			align-items: center;
 			gap: 25px;
-			margin: 10px 0 10px 0;
-			list-style: none;
+			margin: 6px 0 2px 0;
 			cursor: pointer;
 			transition: letter-spacing 0.3s ease;
-			text-align: center;
 
-			svg {
-				display: block;
-				margin: 0 auto;
+			&-icon {
+				align-self: flex-start;
+				justify-self: left;
+			}
+
+			& p {
+				margin: 0;
 			}
 		}
+	}
+
+	&__icon-logo {
+		width: 30px;
+		height: 30px;
+		color: v.$color-blue;
+		transition: transform 0.3s ease;
 	}
 }
 
 //HOVER
 
-.contact:hover .contact__title {
+.contact:hover .contact__title,
+.education:hover .education__title,
+.hobby:hover .hobby__title {
 	padding-left: 8px;
 }
 
-.contact__list-item:hover {
+.contact__list-item:hover,
+.hobby__list-item:hover {
 	letter-spacing: 0.02em;
 }
 
 .contact__list-item:hover .item-icon {
 	transform: scale(1.1) rotate(6deg);
 }
-.contact__list-item:hover .item-icon .item-icon__logo {
-	color: #fff;
-}
 
-.education:hover .education__title {
-	padding-left: 8px;
-}
-
-.education__list-item:hover .list-item__icon .icon__logo {
-	//background: #67b4f2;
-	transform: scale(1.2) rotate(6deg);
+.education__list-item:hover .list-item__icon .icon__logo,
+.hobby__list-item:hover .hobby__icon-logo {
+	transform: scale(1.1) rotate(6deg);
 	color: #fff;
 }

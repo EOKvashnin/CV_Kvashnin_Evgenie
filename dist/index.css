@@ -321,25 +321,34 @@ body {
 }
 .hobby__list-item {
   display: flex;
-  flex-direction: row;
-  align-items: start;
+  align-items: center;
   gap: 25px;
-  margin: 10px 0 10px 0;
-  list-style: none;
+  margin: 6px 0 2px 0;
   cursor: pointer;
   transition: letter-spacing 0.3s ease;
-  text-align: center;
 }
-.hobby__list-item svg {
-  display: block;
-  margin: 0 auto;
+.hobby__list-item-icon {
+  align-self: flex-start;
+  justify-self: left;
+}
+.hobby__list-item p {
+  margin: 0;
+}
+.hobby__icon-logo {
+  width: 30px;
+  height: 30px;
+  color: #67b4f2;
+  transition: transform 0.3s ease;
 }
 
-.contact:hover .contact__title {
+.contact:hover .contact__title,
+.education:hover .education__title,
+.hobby:hover .hobby__title {
   padding-left: 8px;
 }
 
-.contact__list-item:hover {
+.contact__list-item:hover,
+.hobby__list-item:hover {
   letter-spacing: 0.02em;
 }
 
@@ -347,16 +356,9 @@ body {
   transform: scale(1.1) rotate(6deg);
 }
 
-.contact__list-item:hover .item-icon .item-icon__logo {
-  color: #fff;
-}
-
-.education:hover .education__title {
-  padding-left: 8px;
-}
-
-.education__list-item:hover .list-item__icon .icon__logo {
-  transform: scale(1.2) rotate(6deg);
+.education__list-item:hover .list-item__icon .icon__logo,
+.hobby__list-item:hover .hobby__icon-logo {
+  transform: scale(1.1) rotate(6deg);
   color: #fff;
 }
 
