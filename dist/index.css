@@ -23,6 +23,7 @@ body {
 }
 .profile:hover .profile__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .profile:hover .profile__title::after {
   width: 100px;
@@ -34,7 +35,7 @@ body {
   position: relative;
   padding: 15px 0;
   margin-bottom: 20px;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .profile__title::after {
   content: "";
@@ -54,6 +55,7 @@ body {
 
 .work:hover .work__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .work:hover .work__title::after {
   transform: translateX(3px);
@@ -65,7 +67,7 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
   position: relative;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .work__title::after {
   content: "";
@@ -152,6 +154,7 @@ body {
 
 .skills:hover .skills__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .skills:hover .skills__title::after {
   transform: translateX(3px);
@@ -165,7 +168,7 @@ body {
   margin-bottom: 20px;
   margin-top: 15px;
   position: relative;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .skills__title::after {
   content: "";
@@ -186,7 +189,7 @@ body {
 .skills__list-item {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 90px 7fr;
   justify-content: start;
   align-items: flex-start;
   margin-top: 3px;
@@ -231,7 +234,7 @@ body {
 .skills-other__list-item {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 90px 7fr;
   justify-content: start;
   align-items: flex-start;
   flex-wrap: wrap;
