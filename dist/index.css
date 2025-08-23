@@ -499,6 +499,10 @@ body {
   fill: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: url("/img/7205.webp") center/cover no-repeat;
   background-attachment: fixed;
