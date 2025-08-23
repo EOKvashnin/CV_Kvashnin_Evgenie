@@ -296,7 +296,7 @@
 
 	.hobby {
 		width: 100%;
-		max-width: 340px;
+		max-width: 300px;
 
 		&__title {
 			font-size: 32px;
@@ -316,13 +316,6 @@
 					font-size: 20px;
 				}
 			}
-		}
-
-		&__icon-logo {
-			width: 30px;
-			height: 30px;
-			color: v.$color-blue;
-			transition: transform 0.3s ease, fill 0.3s ease, color 0.3s ease;
 		}
 	}
 }
