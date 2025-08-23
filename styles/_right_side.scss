@@ -209,10 +209,22 @@
 				transform 0.4s ease;
 		}
 	}
+
 	&__list {
 		font-size: 14px;
 		font-weight: 500;
 		padding: 0;
+
+		&:hover {
+			.skills__list-subtitle {
+				letter-spacing: 0.01rem;
+				transform: translateX(10px);
+			}
+		}
+		&-subtitle {
+			margin-bottom: 15px;
+			transition: letter-spacing 0.4s ease, transform 0.4s ease;
+		}
 
 		&-item {
 			list-style: none;
@@ -221,6 +233,12 @@
 			justify-content: start;
 			align-items: flex-start;
 			margin-top: 3px;
+
+			&:hover {
+				.skills__list-item-logo-svg {
+					transform: scale(1.2);
+				}
+			}
 
 			&-logo {
 				display: flex;
@@ -263,6 +281,18 @@
 			font-weight: 500;
 			padding: 0;
 
+			&:hover {
+				.skills-other__list-subtitle {
+					letter-spacing: 0.01rem;
+					transform: translateX(10px);
+				}
+			}
+
+			&-subtitle {
+				margin-bottom: 15px;
+				transition: letter-spacing 0.4s ease, transform 0.4s ease;
+			}
+
 			&-item {
 				list-style: none;
 				display: grid;
@@ -271,6 +301,12 @@
 				align-items: flex-start;
 				flex-wrap: wrap;
 				margin-top: 3px;
+
+				&:hover {
+					.skills-other__list-item-logo-icons-svg {
+						transform: scale(1.1);
+					}
+				}
 
 				&-logo {
 					display: flex;
@@ -302,32 +338,29 @@
 
 .btn {
 	border-radius: 0.6em;
-	margin: 2px 3px 2px 0;
-	padding: 0.3em 0.5em;
+	margin: 0.125rem 0.1875rem 0.125rem 0;
+	padding: 0.5em 1em;
 	border: none;
 	background-color: v.$btn-color;
+	color: v.$color-darkgrey;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	display: inline-block;
+
+	&:hover {
+		box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+		transform: translateY(-2px);
+		background-color: darken(v.$btn-color, 10%);
+	}
+
+	&:active {
+		transform: translateY(0);
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
+	}
+
 	&__link {
 		text-decoration: none;
-		color: v.$color-darkgrey;
+		color: inherit;
+		display: block;
 	}
-}
-
-.code_level_1 {
-	margin-top: 20px;
-	content: '';
-	width: 400px;
-	height: 4px;
-	background: #000;
-	border-radius: 2px;
-	position: relative;
-}
-.code_level_2 {
-	position: absolute;
-	top: 0;
-	left: 0;
-	content: '';
-	width: 300px;
-	height: 4px;
-	border-radius: 2px;
-	background: #e90707;
 }
