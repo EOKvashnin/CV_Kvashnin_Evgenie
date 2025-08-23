@@ -2,9 +2,9 @@
 @use 'sass:color';
 
 body {
-	background: url('/img/texture.webp') center/cover no-repeat;
+	background: url('/img/7205.webp') center/cover no-repeat;
 	background-attachment: fixed;
-	// background-color: #868686;
+	//background-color: #cdcccc;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -15,7 +15,6 @@ body {
 	display: grid;
 	width: 100%;
 	max-width: 900px;
-	height: 1200px;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 	margin: 40px auto 40px;
 	grid-template-columns: 1fr 2fr;

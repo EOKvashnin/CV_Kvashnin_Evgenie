@@ -23,6 +23,7 @@ body {
 }
 .profile:hover .profile__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .profile:hover .profile__title::after {
   width: 100px;
@@ -34,7 +35,7 @@ body {
   position: relative;
   padding: 15px 0;
   margin-bottom: 20px;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .profile__title::after {
   content: "";
@@ -54,6 +55,7 @@ body {
 
 .work:hover .work__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .work:hover .work__title::after {
   transform: translateX(3px);
@@ -65,7 +67,7 @@ body {
   text-transform: uppercase;
   margin-top: 30px;
   position: relative;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .work__title::after {
   content: "";
@@ -152,6 +154,7 @@ body {
 
 .skills:hover .skills__title {
   transform: translateX(10px);
+  font-weight: 700;
 }
 .skills:hover .skills__title::after {
   transform: translateX(3px);
@@ -165,7 +168,7 @@ body {
   margin-bottom: 20px;
   margin-top: 15px;
   position: relative;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, font-weight 0.4s ease;
 }
 .skills__title::after {
   content: "";
@@ -183,13 +186,24 @@ body {
   font-weight: 500;
   padding: 0;
 }
+.skills__list:hover .skills__list-subtitle {
+  letter-spacing: 0.01rem;
+  transform: translateX(10px);
+}
+.skills__list-subtitle {
+  margin-bottom: 15px;
+  transition: letter-spacing 0.4s ease, transform 0.4s ease;
+}
 .skills__list-item {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 7fr;
+  grid-template-columns: 90px 7fr;
   justify-content: start;
   align-items: flex-start;
   margin-top: 3px;
+}
+.skills__list-item:hover .skills__list-item-logo-svg {
+  transform: scale(1.2);
 }
 .skills__list-item-logo {
   display: flex;
@@ -228,14 +242,25 @@ body {
   font-weight: 500;
   padding: 0;
 }
+.skills-other__list:hover .skills-other__list-subtitle {
+  letter-spacing: 0.01rem;
+  transform: translateX(10px);
+}
+.skills-other__list-subtitle {
+  margin-bottom: 15px;
+  transition: letter-spacing 0.4s ease, transform 0.4s ease;
+}
 .skills-other__list-item {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 90px 7fr;
   justify-content: start;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 3px;
+}
+.skills-other__list-item:hover .skills-other__list-item-logo-icons-svg {
+  transform: scale(1.1);
 }
 .skills-other__list-item-logo {
   display: flex;
@@ -261,35 +286,28 @@ body {
 
 .btn {
   border-radius: 0.6em;
-  margin: 2px 3px 2px 0;
-  padding: 0.3em 0.5em;
+  margin: 0.125rem 0.1875rem 0.125rem 0;
+  padding: 0.5em 1em;
   border: none;
   background-color: #e0ddda;
+  color: #232323;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover {
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+  transform: translateY(-2px);
+  background-color: rgb(200.75, 195.5, 190.25);
+}
+.btn:active {
+  transform: translateY(0);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 12px;
 }
 .btn__link {
   text-decoration: none;
-  color: #232323;
-}
-
-.code_level_1 {
-  margin-top: 20px;
-  content: "";
-  width: 400px;
-  height: 4px;
-  background: #000;
-  border-radius: 2px;
-  position: relative;
-}
-
-.code_level_2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 300px;
-  height: 4px;
-  border-radius: 2px;
-  background: #e90707;
+  color: inherit;
+  display: block;
 }
 
 .left-side {
@@ -482,7 +500,7 @@ body {
 }
 
 body {
-  background: url("/img/texture.webp") center/cover no-repeat;
+  background: url("/img/7205.webp") center/cover no-repeat;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
@@ -494,7 +512,6 @@ body {
   display: grid;
   width: 100%;
   max-width: 900px;
-  height: 1200px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   margin: 40px auto 40px;
   grid-template-columns: 1fr 2fr;
