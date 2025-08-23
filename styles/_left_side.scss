@@ -5,13 +5,18 @@
 	flex-direction: column;
 	justify-content: start;
 	align-items: start;
-	background-color: #232323;
+	background-color: v.$color-darkgrey;
 	color: #fff;
 }
 
 .ImgBx img {
 	width: 100%;
+	height: 350px;
 	object-fit: cover;
+
+	img {
+		height: 200px;
+	}
 }
 
 .about {
@@ -79,8 +84,8 @@
 		font-weight: 500;
 	}
 	&-icon {
-		align-self: center; /* Вертикальное выравнивание */
-		justify-self: left; /* Горизонтальное выравнивание */
+		align-self: center;
+		justify-self: left;
 
 		&__logo {
 			width: 31px;
@@ -95,7 +100,7 @@
 	position: relative;
 	width: 250px;
 	margin: 0 20px 0 25px;
-	max-width: 280px;
+	max-width: 300px;
 	padding: 25px 0;
 	border-bottom: 1px solid rgb(72, 70, 70);
 
@@ -211,4 +216,113 @@
 	transform: scale(1.1) rotate(6deg);
 	color: #fff;
 	fill: #fff;
+}
+
+@media (max-width: v.$media-s) {
+	.left-side {
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.about {
+		width: 100%;
+		&__title {
+			width: 100%;
+
+			font-size: 60px;
+			line-height: 60px;
+
+			span {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.ImgBx {
+		margin: 30px auto;
+		width: 90%;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.contact {
+		width: 100%;
+		max-width: 100%;
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+	}
+
+	.item p {
+		font-size: 20px;
+		max-width: 100%;
+	}
+	.item {
+		&-icon {
+			&__logo {
+				width: 40px; // новый размер
+				height: 40px; // новый размер
+			}
+		}
+	}
+
+	.education {
+		width: 100%;
+		max-width: 340px;
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+
+		.education__list-item {
+			p {
+				font-size: 16px;
+			}
+
+			.education__text span {
+				font-size: 18px;
+			}
+
+			.education__text p {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.hobby {
+		width: 100%;
+		max-width: 340px;
+
+		&__title {
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+
+		&__list {
+			&-item {
+				gap: 42px;
+				&-icon {
+					align-self: flex-start;
+					justify-self: left;
+					transition: transform 0.3s ease, color 0.3s ease;
+				}
+
+				& p {
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__icon-logo {
+			width: 30px;
+			height: 30px;
+			color: v.$color-blue;
+			transition: transform 0.3s ease, fill 0.3s ease, color 0.3s ease;
+		}
+	}
 }

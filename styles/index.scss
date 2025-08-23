@@ -1,5 +1,6 @@
 @use 'importer';
 @use 'sass:color';
+@use 'variables' as v;
 
 html {
 	scroll-behavior: smooth;
@@ -23,7 +24,7 @@ body {
 	margin: 40px auto 40px;
 	grid-template-columns: 1fr 2fr;
 
-	@media (max-width: 768px) {
+	@media (max-width: v.$media-s) {
 		grid-template-columns: 1fr; /* Одна колонка */
 		grid-template-rows: auto auto; /* Две строки */
 		height: auto; /* Автовысота */
