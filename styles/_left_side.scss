@@ -23,6 +23,7 @@
 	&__title {
 		position: relative;
 		width: 250px;
+		max-width: 280px;
 		margin: 15px 20px 0 25px;
 		padding-bottom: 10px;
 		font-size: 45px;
@@ -44,8 +45,9 @@
 .contact {
 	position: relative;
 	width: 250px;
-	margin: 0 20px 0 25px;
 	max-width: 280px;
+	margin: 0 20px 0 25px;
+
 	padding: 25px 5px 5px 5px;
 	/* padding-left: 8px; */
 	border-bottom: 1px solid rgb(72, 70, 70);
@@ -92,6 +94,10 @@
 			height: 31px;
 			color: v.$color-blue;
 			transition: transform 0.3s ease, color 0.3s ease;
+		}
+		&__telephone {
+			text-decoration: none;
+			color: #fff;
 		}
 	}
 }
@@ -248,8 +254,8 @@
 	}
 
 	.contact {
-		width: 100%;
-		max-width: 100%;
+		// width: 100%;
+		max-width: 280px;
 
 		&__title {
 			font-size: 32px;
@@ -272,7 +278,7 @@
 
 	.education {
 		width: 100%;
-		max-width: 300px;
+		max-width: 280px;
 
 		&__title {
 			font-size: 32px;

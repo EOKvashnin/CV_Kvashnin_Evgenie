@@ -251,6 +251,10 @@
 					transition: transform 0.4s ease, color 0.4s ease;
 				}
 			}
+			span {
+				font-size: 9px;
+				font-style: italic;
+			}
 		}
 	}
 	&__desc li {

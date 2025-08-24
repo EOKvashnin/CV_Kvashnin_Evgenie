@@ -216,6 +216,10 @@ body {
   color: #4a4d4e;
   transition: transform 0.4s ease, color 0.4s ease;
 }
+.skills__list-item span {
+  font-size: 9px;
+  font-style: italic;
+}
 .skills__desc li {
   padding: 3px;
 }
@@ -331,6 +335,7 @@ body {
 .about__title {
   position: relative;
   width: 250px;
+  max-width: 280px;
   margin: 15px 20px 0 25px;
   padding-bottom: 10px;
   font-size: 45px;
@@ -350,8 +355,8 @@ body {
 .contact {
   position: relative;
   width: 250px;
-  margin: 0 20px 0 25px;
   max-width: 280px;
+  margin: 0 20px 0 25px;
   padding: 25px 5px 5px 5px;
   /* padding-left: 8px; */
   border-bottom: 1px solid rgb(72, 70, 70);
@@ -394,6 +399,10 @@ body {
   height: 31px;
   color: #67b4f2;
   transition: transform 0.3s ease, color 0.3s ease;
+}
+.item-icon__telephone {
+  text-decoration: none;
+  color: #fff;
 }
 
 .education {
@@ -527,8 +536,7 @@ body {
     max-width: 100%;
   }
   .contact {
-    width: 100%;
-    max-width: 100%;
+    max-width: 280px;
   }
   .contact__title {
     font-size: 32px;
@@ -544,7 +552,7 @@ body {
   }
   .education {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
   }
   .education__title {
     font-size: 32px;
