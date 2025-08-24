@@ -95,7 +95,7 @@
 			color: v.$color-blue;
 			transition: transform 0.3s ease, color 0.3s ease;
 		}
-		&__telephone {
+		&__contact {
 			text-decoration: none;
 			color: #fff;
 		}
@@ -114,7 +114,7 @@
 
 	.education__title {
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 500;
 		letter-spacing: 1.5px;
 		transition: padding-left 0.3s ease;
 	}
@@ -164,7 +164,7 @@
 
 	&__title {
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 500;
 		letter-spacing: 1.5px;
 		transition: padding-left 0.3s ease;
 	}
@@ -236,6 +236,7 @@
 			width: 100%;
 
 			font-size: 60px;
+			font-weight: 300;
 			line-height: 60px;
 
 			span {
@@ -259,6 +260,7 @@
 
 		&__title {
 			font-size: 32px;
+			font-weight: 500;
 			margin-bottom: 15px;
 		}
 	}
@@ -273,6 +275,9 @@
 				width: 40px;
 				height: 40px;
 			}
+			&__contact {
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -282,6 +287,7 @@
 
 		&__title {
 			font-size: 32px;
+			font-weight: 500;
 			margin-bottom: 15px;
 		}
 

@@ -400,7 +400,7 @@ body {
   color: #67b4f2;
   transition: transform 0.3s ease, color 0.3s ease;
 }
-.item-icon__telephone {
+.item-icon__contact {
   text-decoration: none;
   color: #fff;
 }
@@ -416,7 +416,7 @@ body {
 }
 .education .education__title {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1.5px;
   transition: padding-left 0.3s ease;
 }
@@ -460,7 +460,7 @@ body {
 }
 .hobby__title {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1.5px;
   transition: padding-left 0.3s ease;
 }
@@ -523,6 +523,7 @@ body {
   .about__title {
     width: 100%;
     font-size: 60px;
+    font-weight: 300;
     line-height: 60px;
   }
   .about__title span {
@@ -540,6 +541,7 @@ body {
   }
   .contact__title {
     font-size: 32px;
+    font-weight: 500;
     margin-bottom: 15px;
   }
   .item p {
@@ -550,12 +552,16 @@ body {
     width: 40px;
     height: 40px;
   }
+  .item-icon__contact {
+    font-size: 20px;
+  }
   .education {
     width: 100%;
     max-width: 280px;
   }
   .education__title {
     font-size: 32px;
+    font-weight: 500;
     margin-bottom: 15px;
   }
   .education .education__list-item p {
