@@ -3,12 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="dist/index.css" />
 		<title>CV</title>
 	</head>
@@ -17,73 +14,284 @@
 			<section class="left-side">
 				<div class="about">
 					<div class="ImgBx">
-						<img src="img/Ava_git.jpg" alt="" />
+						<img src="img/ava_2.png" alt="" />
 					</div>
-					<h2>Kvashnin Evgenie <br /><span>Frontend Developer</span></h2>
+					<h2 class="about__title">
+						Квашнин Евгений <br /><span>Frontend Разработчик
+
+						</span>
+					</h2>
 				</div>
-				<div class="social__link"></div>
+				
 				<div class="contact">
-					<div class="contact__title">Contact info</div>
+					<h3 class="contact__title">Контакты</h3>
 					<ul class="contact__list-wrap">
-						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#mail"></use>
+						<li class="contact__list-item item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#mail"></use>
 								</svg>
 							</div>
-							<h4 class="text">Email<br /><span>eo_kvashnin@bk.ru</span></h4>
+							<p>eo_kvashnin@bk.ru</p>
 						</li>
-						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#phone"></use>
+						<li class="contact__list-item item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#phone"></use>
 								</svg>
 							</div>
-							<h4 class="text">Phone<br /><span>+7 (921) 257-16-33</span></h4>
+							<p>+7 (921) 257-16-33</p>
 						</li>
-						<li class="contact__list-item">
-							<div class="icon">
-								<svg class="logo" aria-label="logo">
-									<use href="img/sprites.svg#globe"></use>
+						<li class="contact__list-item item">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#tg"></use>
 								</svg>
 							</div>
-							<h4 class="text">
-								Location<br /><span>Cherepovets, Russia</span>
-							</h4>
+							<p>@EOKvashnin</p>
 						</li>
+						<li class="contact__list-item item ">
+							<div class="item-icon">
+								<svg class="item-icon__logo" aria-label="logo">
+									<use href="img/sprite.svg#globe"></use>
+								</svg>
+							</div>
+							<p>Череповец, Россия</p>
+							
+						</li>
+						
 					</ul>
 				</div>
 				<div class="education">
-					<div class="education__title">Education</div>
+					<h3 class="education__title">Образование</h3>
 					<ul class="education__wrap">
 						<li class="education__list-item">
 							<div class="list-item__icon">
 								<svg class="icon__logo" aria-label="logo">
-									<use href="img/sprites.svg#university"></use>
+									<use href="img/sprite.svg#university"></use>
 								</svg>
 							</div>
-							<h4 class="education__text">
-								Vologda technical university<br /><span
-									>Management and informatics in technical systems</span
-								>
-							</h4>
+							<div class="education__text">
+							<p>	Вологодский государственный технический университет<br /><span
+									>Управление и информатика в автоматизированных системах</span>
+							</p>
+							</div>
+							
 						</li>
 						<li class="education__list-item">
 							<div class="list-item__icon">
 								<svg class="icon__logo" aria-label="logo">
-									<use href="img/sprites.svg#education"></use>
+									<use href="img/sprite.svg#education"></use>
 								</svg>
 							</div>
-							<h4 class="education__text">
-								Cherepovets Metallurgical College<br /><span>
-									Software for computing equipment and automated systems</span
-								>
-							</h4>
+							<div class="education__text">
+							<p>Череповецкий металлургический колледж<br />
+								<span>Программное обеспечение для вычислительной техники и автоматизированных систем</span>		
+							</p>
+							</div>
 						</li>
 					</ul>
 				</div>
+				<div class="hobby">
+					<h3 class="hobby__title">ХОББИ</h3>
+					<div class="hobby__list">
+						<div class="hobby__list-item">
+							<div class="hobby__list-item-icon"> 
+								<svg class="hobby__icon-logo" aria-label="logo"> 
+									<use href="img/sprite_hobbi.svg#code"></use>
+								</svg>
+							</div>
+							<p>Программирование</p>
+						</div>
+						<div class="hobby__list-item">
+							<div class="hobby__list-item-icon"> 
+								<svg class="hobby__icon-logo" aria-label="logo"> 
+									<use href="img/sprite_hobbi.svg#sound"></use>
+								</svg>
+							</div>
+							<p>Автозвук</p>
+						</div>
+						<div class="hobby__list-item">
+							<div class="hobby__list-item-icon"> 
+								<svg class="hobby__icon-logo" aria-label="logo"> 
+									<use href="img/sprite_hobbi.svg#saw"></use>
+								</svg>
+							</div>
+							<p>Работа по дереву</p>
+						</div>
+						<div class="hobby__list-item">
+							<div class="hobby__list-item-icon"> 
+								<svg class="hobby__icon-logo" aria-label="logo"> 
+									<use href="img/sprite_hobbi.svg#gym"></use>
+								</svg>
+							</div>
+							<p>Тренажерный зал</p>
+						</div>
+					</div>
+</div>
 			</section>
-			<section class="right-side"></section>
+			<section class="right-side">
+				<div class="container_right">
+					<div class="profile">
+						<h2 class="profile__title">Обо мне</h2>
+						<div class="profile__header">
+							<h4>Frontend-разработчик с сильным бэкграундом в анализе данных <br> и создании пользовательских интерфейсов.</h4>
+						</div>
+						<p class="profile__desc">
+							
+							<p style="text-indent: 1.5em;">Более 6 лет работал в роли аналитика в крупных промышленных компаниях, где не только глубоко погружался в данные, но и непосредственно участвовал в разработке: собирал требования, писал ТЗ и создавал прототипы UI для новых  и уже работающих веб-сервисов. Этот опыт научил меня понимать потребности пользователя и визуализировать сложную информацию.</p>
+							
+							<p style="text-indent: 1.5em;">Осознанно меняю специализацию на frontend-разработку, так как именно здесь нашел сочетание логики, творчества и возможности создавать продукты, с которыми напрямую взаимодействуют люди. Глубоко погружен в изучение современного стека: Vue.js, JavaScript, HTML/CSS. Ищу команду, где смогу применить свои уникальные навыки и расти как специалист.</p>
+
+							<p style="text-indent: 1.5em;">Мои сильные стороны: быстрая обучаемость, аналитическое мышление, понимание полного цикла разработки продукта и страсть к созданию удобных интерфейсов.</p>
+						</p>
+					</div>
+					<div class="work">
+						<h2 class="work__title">Опыт работы</h2>
+						<div class="work__grid">
+							<div class="work__grid-line line"></div>
+							<div class="work__wrapper job">
+								<h4 class="job__title">АО "Апатит" / <span> Эксперт группы расчетных систем и аналитики</span></h4>
+								<h5 class="job__title">02.2023  по настоящее время</h5>
+								<ul class="job__list">
+									<li>		
+								Сбор и анализ требований от бизнес-заказчиков для разработки новых модулей корпоративной HR-системы. Составление технических заданий.</li>
+								
+
+								<li>Разработка интерактивных прототипов пользовательского интерфейса для новых веб-сервисов, что позволило согласовать логику и дизайн до начала реализации.</li>
+
+								<li>Автоматизация процессов с использованием Python-скриптов, что демонстрирует умение писать чистый, поддерживаемый код.</li>
+
+								<li>Глубокая работа с базами данных (PostgreSQL) и ETL-процессами, что обеспечивает понимание жизненного цикла данных, с которыми взаимодействует фронтенд.</li>
+
+								<li>Создание и поддержка аналитических дашбордов (Power BI), что напрямую связано с разработкой визуальных, интерактивных веб-интерфейсов.</li>
+
+								</ul>
+							</div>
+							<div class="work__wrapper job">
+								<h4 class="job__title">ПАО "Северсталь" / <span> Менеджер по проектам и аналитике</span></h4>
+								<h5 class="job__title">2019 - 2022</h5>
+								<ul class="job__list">
+									<li>Реализация IT-проектов по внедрению инновационных решений (VR-тренажеры, цифровые помощники).</li>
+
+									<li>Автоматизация отчетности и визуализация данных с использованием Power BI и Excel, что развило навыки создания понятных и эффективных интерфейсов для представления информации.</li>
+
+									<li>Анализ больших массивов данных, что сформировало системное аналитическое мышление, необходимое для решения сложных задач в разработке.</li>
+
+								</ul>
+							</div>
+							
+					</div>				
+					
+				</div> 
+				
+				<div class="skills">
+						<h2 class="skills__title">Навыки</h2>						
+						<ul class="skills__list">
+							<h4 class="skills__list-subtitle">Основные освоенные технологии:</h4>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#html5"></use>
+									</svg>
+									<svg class="skills__list-item-logo-svg" id="css3" aria-label="logo">
+										<use href="img/skills_sprites.svg#css3"></use>
+									</svg>
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>HTML5 / CSS3</strong>: Семантическая верстка, адаптивная и кроссбраузерная верстка. <br>
+									<button class="btn"><a href="https://eokvashnin.github.io/Aivazovski" class="btn__link" target="_blank">Ayvazovskiy_IC</a></button>
+									<button class="btn"><a href="https://eokvashnin.github.io/landing_live_streaming/" class="btn__link" target="_blank">landing_live_streaming</a></button>
+																							
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" id="js" aria-label="logo">
+									<use href="img/skills_sprites.svg#java"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>JavaScript (ES6+)</strong>: Изучен и применен в проектах. <br>
+									<button class="btn"><a href="https://eokvashnin.github.io/TODO_App/" class="btn__link" target="_blank">ToDo_App</a></button>
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#react"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>React</strong>: Разработал проект с обучающим курсом по React. В ходе реализации освоил React router, Lazy Loading, Pagination, запросы на удаленный сервер и др.  <br>
+									<button class="btn"><a href="https://react-app-course-ic8l.onrender.com/" class="btn__link" target="_blank"> React App course</a></button>
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#vue"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>Vue.js</strong>: Активное изучение и применение в текущих задачах. (Vue 2/3, Composition API, Vuex/Pinia)..<br>
+									
+								</div>							
+							</li>
+							<li class="skills__list-item">
+								<div class="skills__list-item-logo">
+									<svg class="skills__list-item-logo-svg" aria-label="logo">
+									<use href="img/skills_sprites.svg#git"></use>
+									</svg>
+									
+								</div>
+								<div class="skills__list-item-desc">
+									<strong>Git</strong>: git add .,git commit -m, git push, git switch -c<br>
+									
+								</div>							
+							</li>
+													
+					</ul>
+					
+						<ul class="skills-other__list">
+							<h4 class="skills-other__list-subtitle">Инструменты и сопутствующие навыки:</h4>
+							<li class="skills-other__list-item">
+								<div class="skills-other__list-item-logo">
+									<div class="skills-other__list-item-logo-icons">
+										<svg class="skills-other__list-item-logo-icons-svg" aria-label="logo">
+										<use href="img/skills_sprites.svg#api"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" aria-label="logo">
+										<use href="img/skills_sprites.svg#python"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#psql"></use>
+										</svg>
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#db"></use>
+										</svg> 
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#figma"></use>
+										</svg>
+										
+										<svg class="skills-other__list-item-logo-icons-svg" id="css3" aria-label="logo">
+											<use href="img/skills_sprites.svg#jira"></use>
+										</svg>
+									</div>
+								</div>
+								<div class="skills-other__list-item-desc">
+									<strong>Бэкенд для фронтенда:</strong>REST API, SQL (PostgreSQL), Python, ETL, Apache Airflow<br>
+									<strong>Дизайн и прототипирование:</strong> Разработка UI-прототипов, Figma, MS Power Point <br>
+									<strong>Продуктивность:</strong>Jira, Confluence, опыт работы в Scrum-командах.<br>
+								</div>							
+							</li>						
+						</ul>
+					</div>
+			</section>
+
 		</div>
 	</body>
 </html>
